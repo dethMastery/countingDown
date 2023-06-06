@@ -1,8 +1,8 @@
 import month from './month.js'
 
 const params = new URLSearchParams(window.location.search)
-const date = params.get('date')
-const time = params.get('time')
+const date = (params.get('date') != undefined) ? params.get('date') : '1970-1-1'
+const time = (params.get('time') != undefined) ? params.get('time') : '00:00'
 
 console.log(date, time)
 
