@@ -6,3 +6,7 @@ body {
 * {
   color: #2e2f2f;
 }
+
+.dark #navBar, .dark #footer {
+  background: whitesmoke;
+}
