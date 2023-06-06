@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai:100,200,300,regular,500,600,700);
+
+@import url(./mode/default.css);
+@import url(./mode/darkmode.css);
+
+* {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+#navBar {
+  position: fixed;
+  top: 0;
+}
