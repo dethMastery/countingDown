@@ -10,3 +10,12 @@
 .dark #navBar, .dark #footer {
   background: #2e2f2f;
 }
+
+.dark #container form input {
+  color: #2e2f2f;
+  background: whitesmoke;
+}
+
+.dark #container form button[type='submit'] {
+  color: whitesmoke;
+}

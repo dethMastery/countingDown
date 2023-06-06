@@ -7,6 +7,15 @@ body {
   color: #2e2f2f;
 }
 
-.dark #navBar, .dark #footer {
+#navBar, #footer {
   background: whitesmoke;
+}
+
+#container form input {
+  color: whitesmoke;
+  background: #2e2f2f;
+}
+
+#container form button[type='submit'] {
+  color: whitesmoke;
 }
