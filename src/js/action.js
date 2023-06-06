@@ -1,8 +1,8 @@
 import month from './month.js'
 
 const params = new URLSearchParams(window.location.search)
-const date = (params.get('date') != undefined) ? params.get('date') : '1970-1-1'
-const time = (params.get('time') != undefined) ? params.get('time') : '00:00'
+const date = (params.get('date') != '') ? params.get('date') : '1970-1-1'
+const time = (params.get('time') != '') ? params.get('time') : '00:00'
 
 console.log(date, time)
 
@@ -33,10 +33,12 @@ let x = setInterval(function () {
   let dateLine = `${day}d ${hour}h ${min}m ${sec}s`
 
   const dateLib = document.querySelector("#countingA > h1")
+  const dateHeading = document.querySelector("#countingA > h2")
   dateLib.innerHTML = dateLine
 
-  if (time < 0) {
+  if (timeDiff < 0) {
     clearInterval(x)
-    countingContainer.innerHTML = 'Your counting down is end!'
+    dateHeading.innerHTML = ''
+    dateLib.innerHTML = 'Your counting down is end!'
   }
 }, 1000)
