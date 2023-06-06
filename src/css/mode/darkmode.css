@@ -1,0 +1,8 @@
+.dark {
+  background: #2e2f2f !important;
+  color: whitesmoke;
+}
+
+.dark * {
+  color: whitesmoke
+}
