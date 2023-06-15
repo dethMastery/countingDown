@@ -43,3 +43,11 @@
   opacity: .6;
   transform: scale(.85, .85);
 }
+
+#timeCount {
+  transform: scale(2.5, 2.5);
+}
+
+#countingA > h1 {
+  transform: scale(2, 2);
+}
